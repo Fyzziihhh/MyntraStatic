@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /* overflow-x: hidden; */
+}
+#nav {
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  /* justify-content:space-around; */
+  padding: 10px;
+  border-bottom: 1px solid #d6d6d6;
+  position: fixed;
+}
+#nav > img {
+  width: 100px;
+  height: 80px;
+  margin-left: 22px;
+}
+
+#navText {
+  color: #282c3f;
+  display: flex;
+  gap: 30px;
+  margin-left: 40px;
+  font-weight: 550;
+}
+#studio {
+  margin-top: -4px;
+}
+#navSearch {
+  background-color: #f5f5f6;
+  padding: 10px 15px;
+  margin-left: 50px;
+  border-radius: 5px;
+  width: 485px;
+  margin-left: 60px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+input::placeholder {
+  color: #aeaeaf;
+}
+#NavInputBar {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-left: 20px;
+}
+#navRight {
+  display: flex;
+  gap: 30px;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+.userSection {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userSection i {
+  font-size: 25px;
+}
+.userSection p {
+  font-size: 15px;
+  font-weight: 500;
+}
+#Main {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+#offerCount {
+  height: 60px;
+  width: 100%;
+  background-color: #e5ecff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 100px; */
+}
+#offerCount span {
+  font-size: 25px;
+  color: rgb(254, 143, 143);
+}
+#offerCount p {
+  font-size: 20px;
+  color: #837a86;
+}
+#mainFirst {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  /* background-color: black; */
+}
+#mainShoe {
+  height: inherit;
+  background-color: pink;
+  object-fit: cover;
+}
+#mainShoe img {
+  object-fit: cover;
+  height: inherit;
+}
+#mainRight {
+  margin-left: 40px;
+  width: auto;
+  height: inherit;
+}
+
+#mainLogos {
+  display: flex;
+  gap: 15px;
+  margin-top: 90px;
+  align-items: center;
+}
+#adidas {
+  width: 100px;
+  height: 65px;
+  /* border: 1px solid black; */
+  padding: 5px 0 0 15px;
+  box-shadow: 0 0 7px 0.5px rgb(210, 208, 208);
+}
+#puma {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100px;
+  height: 65px;
+  box-shadow: 0 0 7px 0.5px rgb(210, 208, 208);
+  padding: 5px 0 0 15px;
+}
+
+#adidas img {
+  width: 80px;
+  height: 50px;
+}
+#puma img {
+  width: 70px;
+  height: 40px;
+}
+#discountLabel {
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 20px;
+  line-height: -0.9px;
+  letter-spacing: -2px;
+  color: #4a4a4a;
+}
+#line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(248, 225, 225);
+  margin-top: 40px;
+}
+#explore {
+  margin-top: 15px;
+  color: #4444;
+  font-weight: 550;
+  letter-spacing: -0.5px;
+}
+#DotSlider {
+  width: 100%;
+  /* background-color: #282c3f; */
+  height: 20px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.Dot {
+  height: 7px;
+  width: 7px;
+  background-color: #46444444;
+  border-radius: 50%;
+}
+.Dot:hover {
+  background-color: #7e818c;
+}
+.HeadingLabel {
+  margin:  30px;
+  letter-spacing: 3px;
+  margin-top: 40px;
+  color: #3e4152;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: sans-serif;
+
+}
+#TopBrand {
+  padding: 0 50px;
+}
+.brandContainer {
+  width: 100%;
+  /* height: 80vh; */
+  display: flex;
+  margin-top: 4rem;
+  gap: 20px;
+}
+.BoxContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background-color: #f6f5f8;
+  width: 23%;
+}
+.brandBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f6f5f8;
+
+}
+.brandBox > img:first-child {
+  height: 320px;
+  width: 85%;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 1px rgb(250, 214, 214);
+}
+.brandBox > img:nth-child(2) {
+  width: 55%;
+  margin: 10px;
+  height: 60px;
+  /* object-fit: contain; */
+}
+.brandBox h5 {
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
+#tomLogo {
+  height: 62;
+  width: 90%;
+}
+
+#nikeLogo {
+  object-fit: cover;
+}
+#skechers-logo {
+  object-fit: contain;
+}
+#Crocs {
+  object-fit: cover;
+}
+
+#Categories{
+  width: 100%;
+  height: 230PX;
+
+  display: flex;
+  gap: 30px;
+  padding: 0 50px;
+}
+.category{
+  height:100% ;
+  width: 14.5%;
+  
+  
+
+}
+.category img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.ExploreContainer{
+display: flex;
+/* background-color:#f6f5f8 ; */
+gap: 20px;
+padding: 0 50px;
+
+
+}
+#MyntraLuxe{
+  width: 100%;
+  height: 270px;
+
+  display: flex;
+  gap: 30px;
+  padding: 0 48px;
+  margin-top: 60px;
+  
+}
+.luxeBox{
+  height: inherit;
+  width: 15%;
+  
+}
+.luxeBox img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+}
+#indianWear{
+  width: 100%;
+  height: 350px;
+
+  display: flex;
+  gap: 30px;
+  padding: 0 48px;
+ 
+}
+
+#indianWear .indianWearBox{
+  /* border: 1px solid black; */
+  height: 350px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+/* justify-content: center;
+
+background-color: #3e4152; */
+
+
+
+
+}
+#indianWearContent{
+  padding: 10px ;
+}
+.indianWearBox >img{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.indianWearBox h4{
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: -.5px;
+}
+.indianWearBox  p{
+  font-size: 12px;
+  letter-spacing: -.5px;
+  font-weight: 500;
+
+color: #9D9D9D;
+}
+.indianWearBox h6{
+  color: #9D9D9D;
+  font-weight: 500;
+  margin-top: 5px;
+}
+#Footer{
+  margin-top: 70px;
+  background-color: #FAFBFC;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  border-bottom: 1px solid rgb(65, 40, 40);
+  margin-bottom: 2px;
+ gap: 60px;
+ /* justify-content: center; */
+ padding: 0 15vw;
+
+}
+#Footer h6{
+  text-transform: uppercase;
+ color: #282c3f;
+ font-size: 12px;
+ font-weight: 700;
+ margin: 25px 0;
+
+}
+ ul{
+  margin-top: 10px;
+  list-style: none;
+  /* line-height: -1px; */
+}
+ul li{
+  margin-top: 10px;
+  color: #696b79;
+  cursor: pointer;
+  font-size: 15px;
+  
+}
+
+
+#Experience #AppAvailability img{
+  width: 150px;
+  height: 50px;
+
+
+}
+#Experience > img{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+
+
+
+#Orginal{
+  display: flex;
+  margin-top: 25px;
+}
+#Orginal img{
+  width: 50px;
+  height: 40px;
+  object-fit: fill;
+  margin-right: 10px;
+}
+#Orginal span{
+  font-weight: 700;
+  color: black;
+
+}
+#ReturnPolicy{
+  display: flex;
+  margin-top: 25px;
+}
+#ReturnPolicy span{
+  font-weight: 700;
+  color: black;
+
+}
+#ReturnPolicy img{
+  width: 50px;
+  height: 40px;
+  object-fit: fill;
+  margin-right: 10px;
+}
